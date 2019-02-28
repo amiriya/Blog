@@ -49,8 +49,11 @@ GlobalExecutionContext = {
   }
 }
 ``` 
+ 
+```JavaScript
+var a = 12;
+```
 
-* var a = 12; 
 ## 2. This Global Execution Context, In the Execution phase:
 ```
 GlobalExecutionContext = {
@@ -76,7 +79,9 @@ GlobalExecutionContext = {
 }
 ```
 
-* const b = 20;
+```JavaScript
+const b = 20;
+```
 ```
 GlobalExecutionContext = {
   LexicalEnvironment: {
@@ -101,10 +106,14 @@ GlobalExecutionContext = {
 }
 ```
 
-* console.log(a, b);   
-// 输出： 12 20
+```JavaScript
+console.log(a, b);   // 输出： 12 20
+```
 
-* let c = 24;
+```JavaScript
+let c = 24;
+```
+
 ```
 GlobalExecutionContext = {
   LexicalEnvironment: {
@@ -129,7 +138,10 @@ GlobalExecutionContext = {
 }
 ```
 
-* step(10); 
+```JavaScript
+step(10);
+```
+
 ## 3. When the step() is invoked, a new Execution Context is created for this function, In the createion phase:
 ```
 FunctionExecutionContext = {
@@ -154,10 +166,14 @@ FunctionExecutionContext = {
 ```
 
 ## 4. Function Execution Context, In the execute Phase:
-* console.log(aa, 'Step Start!');   
-// 输出： 10 Step Start!
+```JavaScript
+console.log(aa, 'Step Start!');   // 输出： 10 Step Start!
+```
 
-* var c = 20; 
+```JavaScript
+var c = 20;
+```
+
 ```
 FunctionExecutionContext = {
   LexicalEnvironment: {
@@ -180,7 +196,10 @@ FunctionExecutionContext = {
 }
 ```
 
-### var d = 30; ###
+```JavaScript
+var d = 30;
+```
+
 ```
 FunctionExecutionContext = {
   LexicalEnvironment: {
@@ -203,7 +222,9 @@ FunctionExecutionContext = {
 }
 ```
 
-* add(20, 30);
+```JavaScript
+add(20, 30);
+```
 ## 5. when the add() is called, a new Execution Context is created for this function, In the Creation Phase:
 ```
 FunctionExecutionContext = {
@@ -225,7 +246,10 @@ FunctionExecutionContext = {
 ```
 
 ## 6. Function Execution Context, In the execute Phase:
-* let g = 12;
+```JavaScript
+let g = 12;
+```
+
 ```
 FunctionExecutionContext = {
   LexicalEnvironment: {
@@ -245,20 +269,24 @@ FunctionExecutionContext = {
 }
 ```
 
-* console.log('Adding ...');  
-// 输出： Adding ...
+```JavaScript 
+console.log('Adding ...');  // 输出： Adding ...
+```
 
-* console.log( a + b + g ); 
-// 输出： 62
+```JavaScript
+console.log( a + b + g );  // 输出： 62
+```
 
 ## 7. Function Execution Context(**add()**) is popped off from the Execution Stack. The JavaScript Engine reaches the execution context below(**step()**).
 
-* console.log('Step End!');   
-// 输出： Step End！
+```JavaScript
+console.log('Step End!');   // 输出： Step End！
+```
 
 ## 8. Function Execution Context(**step()**) is popped off from the Execution Stack. The JavaScript Engine reaches the execution context below(**Gloabl Execution Context**).
 
-* console.log(a + b + c);   
-// 输出： 56
+```JavaScript
+console.log(a + b + c);   // 输出： 56
+```
 
 ## 9. All is code is executed, the JavaScript engine removes the global execution context from the current stack.
