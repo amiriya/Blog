@@ -253,12 +253,12 @@ FunctionExecutionContext = {
 
 ## 7. Function Execution Context(**add()**) is popped off from the Execution Stack. The JavaScript Engine reaches the execution context below(**step()**).
 
-* console.log('Step End!'); 
+* console.log('Step End!');   
 // 输出： Step End！
 
 ## 8. Function Execution Context(**step()**) is popped off from the Execution Stack. The JavaScript Engine reaches the execution context below(**Gloabl Execution Context**).
 
-* console.log(a + b + c); 
+* console.log(a + b + c);   
 // 输出： 56
 
 ## 9. All is code is executed, the JavaScript engine removes the global execution context from the current stack.
