@@ -289,8 +289,8 @@ console.log('Step End!');   // 输出： Step End！
 console.log(a + b + c);   // 输出： 56
 ```
 
----
-
 9. All the code is executed, the JavaScript engine removes the global execution context from the current stack.
+
+----
 
 ***Summary:*** Execution Context, includes Global Execution Context and Function Execution Context. First goes through Creation Phase, complie all the code(For Global Execution Context the code includes all the code in the program, For Function Execution Context the code includes all the code in the function.) into a Execution Context. Then goes into the Execution Phase. Execute the code one line by another.
