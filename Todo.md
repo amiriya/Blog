@@ -5,3 +5,4 @@ https://hackernoon.com/javascript-execution-context-and-lexical-environment-expl
 
 ### 阅读：
 https://itnext.io/making-cli-app-with-ease-using-commander-js-and-inquirer-js-f3bbd52977ac
+https://medium.com/@thatisuday/creating-cli-executable-global-npm-module-5ef734febe32
