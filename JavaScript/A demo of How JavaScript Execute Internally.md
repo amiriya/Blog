@@ -39,7 +39,7 @@ GlobalExecutionContext = {
     outer: <null>,
     ThisBinding: <GlobalObject>
   },
-  VaraibleEnvironment: {
+  VariableEnvironment: {
     EnvironmentRecord: {
       Type: 'Object',
       a: <undefined>
@@ -68,7 +68,7 @@ GlobalExecutionContext = {
     outer: <null>,
     ThisBinding: <GlobalObject>
   },
-  VaraibleEnvironment: {
+  VariableEnvironment: {
     EnvironmentRecord: {
       Type: 'Object',
       a: 12
@@ -95,7 +95,7 @@ GlobalExecutionContext = {
     outer: <null>,
     ThisBinding: <GlobalObject>
   },
-  VaraibleEnvironment: {
+  VariableEnvironment: {
     EnvironmentRecord: {
       Type: 'Object',
       a: 12
@@ -127,7 +127,7 @@ GlobalExecutionContext = {
     outer: <null>,
     ThisBinding: <GlobalObject>
   },
-  VaraibleEnvironment: {
+  VariableEnvironment: {
     EnvironmentRecord: {
       Type: 'Object',
       a: 12
@@ -153,7 +153,7 @@ FunctionExecutionContext = {
     outer: <GlobalExecutionContext>,
     ThisBinding: <Global Object or undefined>
   },
-  VaraiableEnvironment: {
+  VariableEnvironment: {
     EnvironmentRecord: {
       Type: 'Declarative',
       c: <undefined>,
@@ -184,7 +184,7 @@ FunctionExecutionContext = {
     outer: <GlobalExecutionContext>,
     ThisBinding: <Global Object or undefined>
   },
-  VaraiableEnvironment: {
+  VariableEnvironment: {
     EnvironmentRecord: {
       Type: 'Declarative',
       c: 20,
@@ -210,7 +210,7 @@ FunctionExecutionContext = {
     outer: <GlobalExecutionContext>,
     ThisBinding: <Global Object or undefined>
   },
-  VaraiableEnvironment: {
+  VariableEnvironment: {
     EnvironmentRecord: {
       Type: 'Declarative',
       c: 20,
