@@ -1,5 +1,5 @@
 ### 翻译：
-https://hackernoon.com/javascript-execution-context-and-lexical-environment-explained-528351703922
+https://blog.bitsrc.io/understanding-promises-in-javascript-c5248de9ff8f
 
 ---
 
