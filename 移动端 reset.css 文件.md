@@ -1,7 +1,7 @@
 前期根据项目经验总结的移动端reset.css：  
 ```css
 html {
-    text-size-adjust: none ; //chrome不会对小于12px的字体放大到14px，浏览器不处理字体大小
+    text-size-adjust: none ; /* chrome不会对小于12px的字体放大到14px，浏览器不处理字体大小 */
 }
 body,h1, h2, h3, h4, h5, h6,blockquote, ol, ul, dl, dd, p,textarea, input, select, option, form {
     margin: 0;
@@ -15,11 +15,11 @@ html, body {
     user-select: none;
 }
 div, p, span,ul, li, dl, dt, dd,textarea, input, select,a, i, em,section, footer, nav {
-    box-sizing: border-box ; //IE盒子模型，非W3C标准模型
+    box-sizing: border-box ; /* IE盒子模型，非W3C标准模型 */
 }
 a, textarea, select, input, i, li, div, p {
     outline: none ;
-    -webkit-tap-highlight-color: rgba(0,0,0,0); /*叠加区高亮*/
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* 叠加区高亮 */
     -webkit-appearance: none ;
 }
 ol, ul {
