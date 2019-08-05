@@ -142,7 +142,7 @@ GlobalExecutionContext = {
 step(10);
 ```
 
-3. When the step() is invoked, a new Execution Context is created for this function, In the ***Createion Phase***:
+3. When the step() is invoked, a new Execution Context is created for this function, In the ***Creation Phase***:
 ```
 FunctionExecutionContext = {
   LexicalEnvironment: {
