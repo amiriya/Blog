@@ -17,3 +17,18 @@ git鼓励大量使用分支：
 把XX文件在
 把XX文件在工作区的修改全部撤销： git checkout — XX
 ```
+
+<hr/>
+问题描述：   
+
+```
+git push origin master; // 报错：error：failed to push some refs to
+```
+
+原因：本地没有update到最新版本的项目   
+
+解决办法:
+```
+输入： git pull --rebase origin master
+再输入：git push origin master
+```
