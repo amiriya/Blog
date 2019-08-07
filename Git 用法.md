@@ -8,13 +8,13 @@ Git主要就是各种版本，各种不同的分支上处理版本。综上，�
 
 git鼓励大量使用分支：
 ```
-查看分支：git branch
+初始化： git init
+查看分支：git branch -a
 创建分支：git branch <name>
 切换分支：git checkout <name>
 创建+切换分支：git checkout -b <name>
 合并某分支到当前分支：git merge <name>
 删除分支：git branch -d <name>
-把XX文件在
 把XX文件在工作区的修改全部撤销： git checkout — XX
 ```
 
