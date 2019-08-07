@@ -1,0 +1,6 @@
+```JavaScript
+2.toString(); // 出错：Syntax Error,原因为JavaScript解析器的一个错误，试图将点操作符解析为浮点数字面值的一部分
+2..toString(); // 2 第二个点号可以正常解析
+2 .toString(); // 2 注意点号前面的空格
+(2).toString(); // 2 先计算，后转换
+```
